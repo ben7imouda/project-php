@@ -1,0 +1,30 @@
+/* === Header enhancements === */
+header .btn-outline-dark:hover {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+header .nav-link {
+    font-weight: 500;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+header .nav-link:hover,
+header .nav-link.font-weight-bold {
+    color: #0056b3 !important;
+    background-color: rgba(0, 86, 179, 0.05);
+}
+
+/* Sticky header subtle shadow */
+header.sticky-top {
+    z-index: 1020;
+}
+
+/* Mobile-friendly spacing */
+@media (max-width: 768px) {
+    header .container { padding-left: 12px; padding-right: 12px; }
+    .bg-primary.py-1 { font-size: 0.85rem; padding: 4px 0; }
+}

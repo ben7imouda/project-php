@@ -1,0 +1,16 @@
+CREATE DATABASE IF NOT EXISTS pc_express;
+USE pc_express;
+
+CREATE TABLE produits (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(100) NOT NULL,
+    description TEXT,
+    prix DECIMAL(10,2) NOT NULL,
+    image VARCHAR(100),
+    stock INT DEFAULT 10
+);
+
+INSERT INTO produits (nom, description, prix, image, stock) VALUES
+('Laptop Gaming ASUS TUF', 'Écran 15.6", Ryzen 7, 16 Go RAM, RTX 3050', 899.99, 'laptop1.jpg', 8),
+('MacBook Air M2', '13.6", 8 Go RAM, 256 Go SSD, ultra léger', 1199.00, 'laptop2.jpg', 5),
+('Dell XPS 13', 'Intel i7, 16 Go RAM, 512 Go SSD, écran InfinityEdge', 1099.50, 'laptop3.jpg', 3);
